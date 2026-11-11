@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard - Arifa Andini Lubis (24220465)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Semantik -->
+    <header class="header">
+        <div class="logo-area">
+            <h2>Royal Dashboard</h2>
+        </div>
+        <div class="search-area">
+            <input type="text" placeholder="Cari Kelas, Dokumen, Aktifitas dll...">
+        </div>
+    </header>
+
+    <!-- App Container Layout -->
+    <div class="app-container">
+        <!-- Navigation Semantik -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Mahasiswa</a></li>
+                <li><a href="#">Kelas</a></li>
+                <li><a href="#">Aktifitas</a></li>
+                <li><a href="#">Statistik</a></li>
+                <li><a href="#">Dokumen</a></li>
+                <li><a href="#" class="menu-settings">Settings</a></li>
+                <li><a href="#" class="menu-signout">Sign Out</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Semantik -->
+        <main class="main-content">
+            <!-- Welcome Banner -->
+            <section class="welcome-banner">
+                <div class="welcome-text">
+                    <h1>Selamat Datang, Arifa Andini Lubis</h1>
+                    <h3>Kelas SI-3C</h3>
+                    <p>Kamu memiliki Statistik, 3 Progres Kelas, 4 Aktifitas Selanjutnya dan 3 Lampiran Dokumen yang ada pada aplikasi ini.</p>
+                </div>
+                <div class="welcome-avatar">
+                    <img src="foto-saya.jpg" alt="Foto Profil Arifa" onerror="this.style.display='none'; document.getElementById('fallback-avatar').style.display='flex';">
+                    <div id="fallback-avatar" class="fallback-avatar" style="display:none;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#1a4f91"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 1: Dashboard Grid (Statistik, Progres, Aktifitas) -->
+            <div class="dashboard-grid">
+                <!-- Statistik Mahasiswa -->
+                <div class="card card-statistik">
+                    <h3>Statistik Mahasiswa</h3>
+                    <div class="chart-container">
+                        <img src="Chart_Statistik.svg" alt="Statistik Mahasiswa">
+                    </div>
+                </div>
+
+                <!-- Progres Kelas -->
+                <div class="card card-progres">
+                    <h3>Progres Kelas</h3>
+                    <div class="progress-item">
+                        <strong class="item-title">Matakuliah A</strong>
+                        <span class="item-accent">78 Pendaftar</span>
+                    </div>
+                    <div class="progress-item">
+                        <strong class="item-title">Matakuliah B</strong>
+                        <span class="item-accent">30 Pendaftar</span>
+                    </div>
+                    <div class="progress-item">
+                        <strong class="item-title">Matakuliah C</strong>
+                        <span class="item-accent">40 Pendaftar</span>
+                    </div>
+                    <div class="progress-item">
+                        <strong class="item-title">Matakuliah D</strong>
+                        <span class="item-accent">10 Pendaftar</span>
+                    </div>
+                </div>
+
+                <!-- Aktifitas Selanjutnya -->
+                <div class="card card-aktifitas">
+                    <h3>Aktifitas Selanjutnya</h3>
+                    <div class="activity-item">
+                        <strong class="item-title">Perkuliahan Daring 1</strong>
+                        <span class="item-accent">Senin, 15 Januari 2026</span>
+                    </div>
+                    <div class="activity-item">
+                        <strong class="item-title">Perkuliahan Daring 1</strong>
+                        <span class="item-accent">Selasa, 15 Februari 2026</span>
+                    </div>
+                    <div class="activity-item">
+                        <strong class="item-title">Perkuliahan Daring 1</strong>
+                        <span class="item-accent">Rabu, 15 Maret 2026</span>
+                    </div>
+                    <div class="activity-item">
+                        <strong class="item-title">Perkuliahan Daring 1</strong>
+                        <span class="item-accent">Kamis, 15 April 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Lampiran Dokumen -->
+            <section class="card card-lampiran">
+                <h3>Lampiran</h3>
+                <div class="lampiran-item">
+                    <span>Lampiran Dokumen 1 - Matakuliah A | Tugas Bersama Perkuliahan Daring</span>
+                    <a href="#" class="link-dokumen">Lihat Dokumen</a>
+                </div>
+                <div class="lampiran-item">
+                    <span>Lampiran Dokumen 2 - Matakuliah B | Tugas Bersama Perkuliahan Daring</span>
+                    <a href="#" class="link-dokumen">Lihat Dokumen</a>
+                </div>
+                <div class="lampiran-item">
+                    <span>Lampiran Dokumen 3 - Matakuliah C | Tugas Bersama Perkuliahan Daring</span>
+                    <a href="#" class="link-dokumen">Lihat Dokumen</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Semantik -->
+    <footer class="footer">
+        <p>&copy; 2026 Arifa Andini Lubis (24220465) - Universitas Royal</p>
+    </footer>
+</body>
+</html>

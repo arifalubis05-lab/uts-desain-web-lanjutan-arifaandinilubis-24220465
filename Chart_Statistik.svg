@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <style>
+    .axis-label { font-family: 'Segoe UI', sans-serif; font-size: 11px; fill: #718096; }
+    .grid-line { stroke: #edf2f7; stroke-dasharray: 4; }
+    .bar { fill: #0056b3; rx: 3; }
+    .avg-box { fill: #a0aec0; rx: 4; }
+    .avg-text { font-family: 'Segoe UI', sans-serif; font-size: 11px; fill: white; font-weight: bold; text-anchor: middle; }
+    .avg-dot { fill: #008080; }
+    .trend-line { fill: none; stroke: #008080; stroke-width: 2.5; stroke-linecap: round; }
+  </style>
+  
+  <!-- Grid Lines -->
+  <line x1="50" y1="80" x2="480" y2="80" class="grid-line" />
+  <line x1="50" y1="140" x2="480" y2="140" class="grid-line" />
+  <line x1="50" y1="200" x2="480" y2="200" class="grid-line" />
+  <line x1="50" y1="260" x2="480" y2="260" class="grid-line" />
+  <line x1="50" y1="320" x2="480" y2="320" class="grid-line" />
+
+  <!-- Y-Axis Labels -->
+  <text x="20" y="84" class="axis-label">60%</text>
+  <text x="20" y="144" class="axis-label">50%</text>
+  <text x="20" y="204" class="axis-label">40%</text>
+  <text x="20" y="264" class="axis-label">30%</text>
+  <text x="20" y="324" class="axis-label">10%</text>
+
+  <!-- Bars -->
+  <rect x="70" y="200" width="60" height="120" class="bar" />
+  <rect x="150" y="240" width="60" height="80" class="bar" />
+  <rect x="230" y="120" width="60" height="200" class="bar" />
+  <rect x="310" y="260" width="60" height="60" class="bar" />
+  <rect x="390" y="80" width="60" height="240" class="bar" />
+
+  <!-- X-Axis Labels -->
+  <text x="85" y="350" class="axis-label">Class A</text>
+  <text x="165" y="350" class="axis-label">Class B</text>
+  <text x="245" y="350" class="axis-label">Class C</text>
+  <text x="325" y="350" class="axis-label">Class D</text>
+  <text x="405" y="350" class="axis-label">Class E</text>
+
+  <!-- Avg Point Box & Dot -->
+  <rect x="270" y="170" width="70" height="35" class="avg-box" />
+  <text x="305" y="185" class="avg-text">Avg</text>
+  <text x="305" y="198" class="avg-text">Point</text>
+
+  <!-- Garis Melengkung Solid Hijau Toska -->
+  <path d="M 70 310 C 130 220, 200 200, 260 210 C 300 220, 330 260, 340 250 C 350 240, 420 180, 460 150" class="trend-line" />
+  <circle cx="340" cy="250" r="7" class="avg-dot" />
+</svg>
